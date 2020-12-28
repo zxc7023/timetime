@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container2"
+    android:weightSum="0.7"
+    android:onClick="onButtonClicked">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/media"
+        android:background="@drawable/major_category1"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/design"
+        android:background="@drawable/major_category2"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+        android:onClick="onButtonClicked" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/international"
+        android:background="@drawable/major_category3"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+        android:onClick="onButtonClicked" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/common"
+        android:background="@drawable/major_category4"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+        android:onClick="onButtonClicked" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/science"
+        android:background="@drawable/major_category5"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+        android:onClick="onButtonClicked" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/medical"
+        android:background="@drawable/major_category6"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+        android:onClick="onButtonClicked" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/etc"
+        android:background="@drawable/category_etc"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+        android:onClick="onButtonClicked" />
+
+</LinearLayout>

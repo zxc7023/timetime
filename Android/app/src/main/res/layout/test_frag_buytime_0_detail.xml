@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView8"
+            android:background="@drawable/bg_rounded_rectengle" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:baselineAligned="false"
+                android:layout_weight="0.8">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/image_border">
+
+                    <ImageView
+                        android:id="@+id/groundImage"
+                        android:src="@drawable/abc_ic_star_black_36dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical|fill_horizontal"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="6dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/titleText"
+                        android:text="제목"
+                        android:layout_weight="0.5"
+                        android:layout_height="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="작성일자"
+                        android:id="@+id/writeDate"
+                        android:gravity="bottom|right"
+                        android:layout_weight="0.5"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.3dp"
+                android:background="#000000" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="id"
+                        android:id="@+id/id" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView12"
+                        android:src="@drawable/small_star" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/rating" />
+
+                    <TextView
+                        android:text="리뷰"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView10"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reviewCount"
+                        android:gravity="right"
+                        android:text="0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

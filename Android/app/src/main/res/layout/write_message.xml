@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView8"
+            android:background="@drawable/bg_rounded_rectengle" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/usernameInput"
+            android:maxLines="20"
+            android:singleLine="false"
+            android:hint="문의\n하고 싶은\n쪽지\n내용을\n입력하세요"
+            android:textIsSelectable="false"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textSize="14dp"
+            android:layout_margin="10dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

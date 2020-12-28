@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container5"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="0.9"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재능검색관리"
+            android:id="@+id/button7"
+            android:textColor="#000000"
+            android:onClick="onButton2Clicked" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재능구매관리"
+            android:id="@+id/button6"
+            android:textColor="#000000"
+            android:onClick="onButton3Clicked" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로필"
+            android:id="@+id/button8"
+            android:textColor="#000000"
+            android:onClick="onButton4Clicked" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:id="@+id/logout"
+            android:textColor="#000000"
+            android:onClick="onButton8Clicked" />
+    </LinearLayout>
+
+</LinearLayout>

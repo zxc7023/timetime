@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView8"
+            android:background="@drawable/bg_rounded_rectengle" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/groundImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/contents"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="내용" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="작성일자"
+                        android:id="@+id/writeDate"
+                        android:gravity="bottom|right"
+                        android:paddingRight="5dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.3dp"
+                android:background="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="id"
+                        android:id="@+id/id"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp">
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/score"
+                        android:numStars="5"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:progressTint="#ffea00"
+                        android:secondaryProgressTint="#ffea00" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

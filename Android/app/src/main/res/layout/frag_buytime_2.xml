@@ -1,0 +1,953 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container2"
+    android:onClick="onButtonClicked">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/button1"
+                android:background="@drawable/category_design"
+                android:layout_margin="5dp"
+                android:onClick="onClickedCategory"
+                android:text="디자인"
+                android:textColor="@android:color/transparent" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sliding_design"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="출판·편집"
+                        android:id="@+id/publish"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="인테리어"
+                        android:id="@+id/textView33"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="캘리그라피"
+                        android:id="@+id/textView34"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="캐릭터"
+                        android:id="@+id/textView35"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="의류·패션"
+                        android:id="@+id/textView36"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="금속"
+                        android:id="@+id/textView37"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="도자기"
+                        android:id="@+id/textView38"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="건축"
+                        android:id="@+id/textView39"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="기타"
+                        android:id="@+id/textView40"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/button2"
+                android:background="@drawable/category_media"
+                android:layout_margin="5dp"
+                android:onClick="onClickedCategory"
+                android:textColor="@android:color/transparent"
+                android:text="미디어" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sliding_media"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="사진·영상"
+                        android:id="@+id/textView29"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="음악·음향"
+                        android:id="@+id/textView41"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="공연"
+                        android:id="@+id/textView42"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="SNS"
+                        android:id="@+id/textView43"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="UCC"
+                        android:id="@+id/textView44"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="시사"
+                        android:id="@+id/textView45"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="방송"
+                        android:id="@+id/textView46"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="라디오"
+                        android:id="@+id/textView47"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="기타"
+                        android:id="@+id/textView48"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/button3"
+                android:background="@drawable/category_office"
+                android:layout_margin="5dp"
+                android:onClick="onClickedCategory"
+                android:textColor="@android:color/transparent"
+                android:text="사무" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sliding_office"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="한글·워드"
+                        android:id="@+id/textView25"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="엑셀"
+                        android:id="@+id/textView26"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="PPT"
+                        android:id="@+id/textView27"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="번역"
+                        android:id="@+id/textView28"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="첨삭"
+                        android:id="@+id/textView30"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="필기"
+                        android:id="@+id/textView31"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="타이핑"
+                        android:id="@+id/textView32"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="창작"
+                        android:id="@+id/textView49"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="기타"
+                        android:id="@+id/textView50"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/button4"
+                android:background="@drawable/category_it"
+                android:layout_margin="5dp"
+                android:onClick="onClickedCategory"
+                android:textColor="@android:color/transparent"
+                android:text="IT" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sliding_it"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="C언어"
+                        android:id="@+id/textView51"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="JAVA"
+                        android:id="@+id/textView52"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="WEB"
+                        android:id="@+id/textView53"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="안드로이드"
+                        android:id="@+id/textView54"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="DB"
+                        android:id="@+id/textView55"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="빅데이터"
+                        android:id="@+id/textView56"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="리눅스"
+                        android:id="@+id/textView57"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="보안"
+                        android:id="@+id/textView58"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="기타"
+                        android:id="@+id/textView59"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/button5"
+                android:background="@drawable/category_language"
+                android:layout_margin="5dp"
+                android:onClick="onClickedCategory"
+                android:textColor="@android:color/transparent"
+                android:text="어학" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sliding_language"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="한국어"
+                        android:id="@+id/textView60"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="프랑스어"
+                        android:id="@+id/textView61"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="한문"
+                        android:id="@+id/textView62"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="중국어"
+                        android:id="@+id/textView63"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="러시아어"
+                        android:id="@+id/textView64"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="일본어"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent"
+                        android:id="@+id/textView65" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="독일어"
+                        android:id="@+id/textView66"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="스페인어"
+                        android:id="@+id/textView67"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="영어"
+                        android:id="@+id/textView68"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/button6"
+                android:background="@drawable/category_life"
+                android:layout_margin="5dp"
+                android:onClick="onClickedCategory"
+                android:textColor="@android:color/transparent"
+                android:text="생활" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sliding_life"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="연애"
+                        android:id="@+id/textView69"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="스터디·과외"
+                        android:id="@+id/textView70"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="뷰티·패션"
+                        android:id="@+id/textView71"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="게임"
+                        android:id="@+id/textView72"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="건강"
+                        android:id="@+id/textView73"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="요리"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent"
+                        android:id="@+id/textView74" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="반려동물"
+                        android:id="@+id/textView75"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="여행"
+                        android:id="@+id/textView76"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="기타"
+                        android:id="@+id/textView77"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/button7"
+                android:background="@drawable/category_etc"
+                android:layout_margin="5dp"
+                android:onClick="onClickedCategory"
+                android:textColor="@android:color/transparent"
+                android:text="기타" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sliding_etc"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="기타"
+                        android:id="@+id/textView78"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="상담"
+                        android:id="@+id/textView79"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="배달"
+                        android:id="@+id/textView80"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.99"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="매장관리"
+                        android:id="@+id/textView81"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="서비스"
+                        android:id="@+id/textView82"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:onClick="onClickedTalent"
+                        android:id="@+id/textView83" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:id="@+id/textView84"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:id="@+id/textView85"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:id="@+id/textView86"
+                        android:layout_weight="0.33"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:onClick="onClickedTalent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

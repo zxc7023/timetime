@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView5"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollLinear">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView8"
+                    android:background="@drawable/bg_rounded_rectengle" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="제목 : "
+                            android:id="@+id/textView87"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:layout_weight="0.8" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="#4682B4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="ID :"
+                            android:id="@+id/textView91"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:layout_weight="0.4" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="작성날짜 :"
+                            android:id="@+id/textView92"
+                            android:layout_weight="0.25"
+                            android:gravity="right"
+                            android:layout_gravity="right" />
+
+                        <TextView
+                            android:id="@+id/writeDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_weight="0.35"
+                            android:gravity="left"
+                            android:layout_gravity="left" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="#4682B4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="요일 :"
+                            android:id="@+id/textView5"
+                            android:layout_weight="0.1"
+                            android:gravity="left|center" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="일"
+                            android:id="@+id/sun"
+                            android:checked="false"
+                            android:layout_weight="0.1" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="월"
+                            android:id="@+id/mon"
+                            android:checked="false"
+                            android:layout_weight="0.1" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="화"
+                            android:id="@+id/tue"
+                            android:checked="false"
+                            android:layout_weight="0.1" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="수"
+                            android:id="@+id/wen"
+                            android:checked="false"
+                            android:layout_weight="0.1" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="목"
+                            android:id="@+id/thu"
+                            android:checked="false"
+                            android:layout_weight="0.1" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="금"
+                            android:id="@+id/fri"
+                            android:checked="false"
+                            android:layout_weight="0.1" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="토"
+                            android:id="@+id/sat"
+                            android:checked="false"
+                            android:layout_weight="0.1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="#4682B4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="성별 :"
+                            android:id="@+id/textView25"
+                            android:layout_weight="0.1"
+                            android:gravity="center" />
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="0.9"
+                            android:gravity="left|center_horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="남자"
+                                android:id="@+id/male"
+                                android:clickable="true"
+                                android:checked="true" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="여자"
+                                android:id="@+id/female"
+                                android:clickable="true"
+                                android:checked="false" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="#4682B4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="구분 : "
+                            android:id="@+id/textView26"
+                            android:layout_weight="0.1"
+                            android:gravity="center" />
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_weight="0.9"
+                            android:gravity="left|center_horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="일반"
+                                android:id="@+id/nomalType"
+                                android:clickable="true"
+                                android:checked="true" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="재능기부"
+                                android:id="@+id/presentType"
+                                android:clickable="true"
+                                android:checked="false" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="#4682B4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="대학 : "
+                            android:id="@+id/textView27"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/major"
+                            android:layout_weight="0.4"
+                            android:gravity="left" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="전공 :"
+                            android:id="@+id/textView28"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/subMajor"
+                            android:layout_weight="0.4"
+                            android:gravity="left" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="#4682B4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="시간: "
+                            android:id="@+id/textView30"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/startHour"
+                            android:layout_weight="0.1"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="~"
+                            android:id="@+id/textView31"
+                            android:layout_weight="0.1"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/endHour"
+                            android:layout_weight="0.1"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.3dp"
+                        android:background="#4682B4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="재능 : "
+                            android:id="@+id/textView32"
+                            android:layout_weight="0.1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/talent"
+                            android:layout_weight="0.9"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView11"
+                    android:background="@drawable/bg_rounded_rectengle" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="내용 : "
+                        android:id="@+id/textView88"
+                        android:layout_weight="0.1"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/contents"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:layout_weight="0.9"
+                        android:gravity="left" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView9"
+                    android:background="@drawable/bg_rounded_rectengle" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/groundImage" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView13"
+                    android:background="@drawable/bg_rounded_rectengle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="별점"
+                        android:id="@+id/textView16"
+                        android:layout_gravity="center" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/averageRating"
+                        android:numStars="5"
+                        android:layout_gravity="center"
+                        android:progressTint="#ffea00"
+                        android:stepSize="0.25"
+                        android:secondaryProgressTint="@android:color/darker_gray"
+                        android:progressBackgroundTint="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

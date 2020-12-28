@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="false">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/pager"
+        android:layout_weight="5">
+    </android.support.v4.view.ViewPager>
+
+
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/banner_pager"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true">
+
+            <RadioGroup
+                android:id="@+id/mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_above="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나누미"
+                    android:id="@+id/radioButton"
+                    android:checked="true"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14dp"
+                    android:allowUndo="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="구하미"
+                    android:id="@+id/radioButton2"
+                    android:checked="false"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="290dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView3"
+                        android:background="@drawable/username"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="center_horizontal|bottom" />
+
+                    <EditText
+                        android:id="@+id/usernameInput"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usernameInput"
+                        android:maxLines="20"
+                        android:inputType="textEmailAddress|textEmailSubject"
+                        android:hint="아이디"
+                        android:layout_marginRight="10dp"
+                        android:textIsSelectable="false"
+                        android:layout_weight="1"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@null"
+                        android:textSize="14dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="20dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="290dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageView2"
+                        android:background="@drawable/password"
+                        android:scaleType="centerInside" />
+
+                    <EditText
+                        android:id="@+id/passwordInput"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/usernameInput"
+                        android:inputType="textPassword"
+                        android:maxLines="20"
+                        android:hint="비밀번호"
+                        android:layout_marginRight="10dp"
+                        android:textIsSelectable="false"
+                        android:clickable="false"
+                        android:contextClickable="true"
+                        android:layout_weight="1"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@null"
+                        android:textSize="14dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="25dp">
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="로그인"
+                    android:layout_marginRight="10dp"
+                    android:background="#5abee6"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:onClick="login" />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:text="회원가입"
+                    android:id="@+id/button"
+                    android:layout_gravity="right"
+                    android:onClick="onButton2Clicked"
+                    android:background="#5abee6"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "35125445075",
+    "firebase_url": "https://fcm-push-timetime.firebaseio.com",
+    "project_id": "fcm-push-timetime",
+    "storage_bucket": "fcm-push-timetime.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35125445075:android:9b86c921b3bd91f5",
+        "android_client_info": {
+          "package_name": "com.example.junkikim.donate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35125445075-kojru3r23v220hvdbtmdesgqh1mh51p0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu7VhkQBa_wAT1HzXAro_4lvG7tay4GCw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
